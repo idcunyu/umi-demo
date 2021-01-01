@@ -4,8 +4,14 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  title: 'demo',
-  description: 'my desc',
+  title: false,
+  antd: {
+    dark: true,
+  },
+  dva: {
+    immer: true,
+    hmr: true,
+  },
   routes: [
     {
       path: '/', component: '@/layouts/BasicLayout',
