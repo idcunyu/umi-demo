@@ -7,7 +7,10 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
-    "webpack": "umi webpack"
+    "webpack": "umi webpack",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "lint:create": "eslint --init"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
@@ -28,7 +31,16 @@
   "devDependencies": {
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
     "@umijs/test": "^3.3.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "react": "^16.12.0",
